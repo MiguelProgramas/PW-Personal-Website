@@ -7,64 +7,100 @@
     <title>HOME</title>
 
     <style>
-        body {
 
-            background-color: darkviolet;
+
+        ul {
+
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            overflow:hidden;
+            background-color: #333;
+             }
+
+        li {
+            float:left
         }
 
-        #HOME2 {
+        li a {
+
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.Active) {
+
+            background-color: #111;
+        }
+        .Active {
+
+            background-color: #04AA6D;
+        }
+
+        li {
+
+            border-right: 1px solid #bbb;
+        }
+
+        li:last-child {
+
+            border-right:none;
+        }
+        
+        ul {
+            position: sticky;
+            width: 100%;
+            border: 1px solid #e7e7e7;
+            top: 0%;
+        }
+ 
+        .flex-container {
+
+            display: flex;
+            background-color: #333;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .flex-container > div {
 
             background-color: white;
-            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
         }
-
-        #TOP10 {
-
-            color: white;
-
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: DodgerBlue;
-}
-
-.flex-container > div {
-        background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-
-
-}
         </style>
 
 </head>
 <body>
-    <h1 id="HOME2">HOME</h1>
 
-    <p id="TOP10">TOP 10 MELHORES NÚMEROS, em nenhuma ordem específica:</p>
+
+    <ul>
+
+        <li><a class="Active" href="http://127.0.0.1:5500/index.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html">News</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html">Contact</a></li>
+        <li style="float: right;"><a href="http://127.0.0.1:5500/index.html">About</a></li>
+    </ul>
 
     <div class="flex-container">
+
+    
         <div>1</div>
         <div>2</div>
-        <div>3</div>  
+        <div>3</div>
         <div>4</div>
         <div>5</div>
-        <div>6</div>  
+        <div style="flex-grow: 1;">6</div>
         <div>7</div>
         <div>8</div>
         <div>9</div>
         <div>10</div>
-        </div>
-
+        <div>11</div>
+        <div>12</div>
+    </div>
 </body>
 </html>
