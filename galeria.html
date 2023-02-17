@@ -65,12 +65,18 @@
             text-align: center;
         }
 
-        div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 180px;
+        .flex-container {
 
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        .flex-container > img {
+
+            width: 25vw;
         }
 
 </style>
@@ -79,11 +85,29 @@
 
         <div class="Menuzinho">
 
-        <li><a class="Active" href="index.html">Home</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="Active" href="galeria.html">Galeria</a></li>
         <li><a href="http://127.0.0.1:5500/index.html">Contact</a></li>
         <li style="float: right;"><a href="http://127.0.0.1:5500/index.html">About</a></li>
+        </ul><br>
 
-        <div>
+        <div class="flex-container">
+            <img src="download.jpg" alt="Imagem minha número 1">
+            <h1>Imagem 1</h1>
+            <img src="download.jpg" alt="Imagem minha número 2">
+            <h1>Imagem 2</h1>
+            <img src="download.jpg" alt="Imagem minha número 3">
+            <h1>Imagem 3</h1>
+        </div><br>
+
+        <div class="flex-container">
+            <img src="download.jpg" alt="Imagem minha número 4">
+            <h2>Imagem 4</h2>
+            <img src="download.jpg" alt="Imagem minha número 5">
+            <h1>Imagem 5</h1>
+            <img src="download.jpg" alt="Imagem minha número 6">
+            <h1>Imagem 6</h1>
+        </div>
+        
 </body>
 </html>
