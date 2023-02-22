@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA</title>
+</head>
+
+<style>
+
+        body {
+
+            background-color:#04AA6D;
+        }
+
+        #Menu {
+
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            overflow:hidden;
+            background-color: #333;
+            position: sticky;
+            width: 100%;
+            border: 1px solid #e7e7e7;
+            top: 0%;
+
+}
+
+        li {
+            float:left
+        }
+
+        li a {
+
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.Active) {
+
+            background-color: #111;
+        }
+        .Active {
+
+            background-color: #04AA6D;
+        }
+
+        .Menuzinho > li {
+
+            border-right: 1px solid #bbb;
+        }
+
+        li:last-child {
+
+            border-right:none;
+        }
+
+        h1 {
+
+            text-align: center;
+        }
+
+        .flex-container {
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        .flex-container > img {
+
+            width: 25vw;
+        }
+
+</style>
+<body>
+    <ul id="Menu">
+
+        <div class="Menuzinho">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a class="Active" href="galeria.html">Galeria</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li style="float: right;"><a href="http://127.0.0.1:5500/index.html">About</a></li>
+        </ul><br>
+
+        <div class="flex-container">
+            <img src="download.jpg" alt="Album minha número 1">
+            <h1>Album 1</h1>
+            <img src="download.jpg" alt="Album minha número 2">
+            <h1>Album 2</h1>
+            <img src="download.jpg" alt="Album minha número 3">
+            <h1>Album 3</h1>
+        </div><br>
+
+        <div class="flex-container">
+            <img src="download.jpg" alt="Album minha número 4">
+            <h2>Album 4</h2>
+            <img src="download.jpg" alt="Album minha número 5">
+            <h1>Album 5</h1>
+            <img src="download.jpg" alt="Album minha número 6">
+            <h1>Album 6</h1>
+        </div>
+        
+</body>
+</html>
