@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,66 +8,110 @@
     <title>LISTA</title>
 </head>
 <style>
-            body {
+    body {
 
-background-color:#04AA6D;
-}
+        background-color: #04AA6D;
+    }
 
-#Menu {
+    #Menu {
 
-list-style-type: none;
-padding: 0%;
-margin: 0%;
-overflow:hidden;
-background-color: #333;
-position: sticky;
-width: 100%;
-border: 1px solid #e7e7e7;
-top: 0%;
+        list-style-type: none;
+        padding: 0%;
+        margin: 0%;
+        overflow: hidden;
+        background-color: #333;
+        position: sticky;
+        width: 100%;
+        border: 1px solid #e7e7e7;
+        top: 0%;
 
-}
+    }
 
-li {
-float:left
-}
+    li {
+        float: left
+    }
 
-li a {
+    li a {
 
-display: block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-}
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
-li a:hover:not(.Active) {
+    li a:hover:not(.Active) {
 
-background-color: #111;
-}
-.Active {
+        background-color: #111;
+    }
 
-background-color: #04AA6D;
-}
+    .Active {
 
-.Menuzinho > li {
+        background-color: #04AA6D;
+    }
 
-border-right: 1px solid #bbb;
-}
+    .Menuzinho>li {
 
-li:last-child {
+        border-right: 1px solid #bbb;
+    }
 
-border-right:none;
-}
+    li:last-child {
+
+        border-right: none;
+    }
+
+    .Lista-enunciado {
+
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .Lista-conteúdo {
+
+        display: flex;
+        flex-direction: column;
+        font-size: xx-large;
+        border-bottom: 3px solid #111;
+        line-height: 50px;
+    }
+
+    .Lista-conteúdo:last-child {
+        border-bottom: none;
+    }
 </style>
+
 <body>
     <ul id="Menu">
 
         <div class="Menuzinho">
 
-        <li><a href="index.html">Home</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="album.html">Album</a></li>
-        <li class="Active" style="float: right;"><a href="lista.html">Lista</a></li>
-        </ul>
+            <li><a title="Home" href="index.html">Home</a></li>
+            <li><a title="Galeria" href="galeria.html">Galeria</a></li>
+            <li><a title="Album" href="album.html">Album</a></li>
+            <li title="Lista" class="Active" style="float: right;"><a href="lista.html">Lista</a></li>
+    </ul>
+
+    <h1 class="Lista-enunciado">Lista das melhores TAGS</h1>
+
+    <ul class="Lista-conteúdo">
+        <li>Div.</li>
+        <li>A.</li>
+        <li>Img.</li>
+        <li>Li.</li>
+        <li>H1.</li>
+    </ul>
+
+    <h1 class="Lista-enunciado">Lista dos comandos GIT</h1>
+
+    <ul class="Lista-conteúdo">
+        <li>Git init.</li>
+        <li>Git add.</li>
+        <li>Git commit.</li>
+        <li>Git push.</li>
+        <li>Git pull.</li>
+        <li>Git fetch.</li>
+        <li>Git clone.</li>
+    </ul>
 </body>
+
 </html>
