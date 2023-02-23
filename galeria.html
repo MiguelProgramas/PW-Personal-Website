@@ -77,6 +77,34 @@
 
             width: 25vw;
         }
+        
+        .Albuns:link {
+
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .Albuns:visited {
+
+            color: #444;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .Albuns:hover {
+
+            color: #111;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .Albuns:active {
+
+            color:yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
 
 </style>
 <body>
@@ -87,9 +115,10 @@
         <li><a href="index.html">Home</a></li>
         <li><a class="Active" href="galeria.html">Galeria</a></li>
         <li><a href="album.html">Album</a></li>
-        <li style="float: right;"><a href="http://127.0.0.1:5500/index.html">About</a></li>
+        <li style="float: right;"><a href="lista.html">About</a></li>
         </ul><br>
 
+        <a class="Albuns" href="album.html">
         <div class="flex-container">
             <img src="download.jpg" alt="Album minha número 1">
             <h1>Album 1</h1>
@@ -107,6 +136,6 @@
             <img src="download.jpg" alt="Album minha número 6">
             <h1>Album 6</h1>
         </div>
-        
+        </a>
 </body>
 </html>
