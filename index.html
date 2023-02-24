@@ -8,15 +8,26 @@
 
     <style>
 
+        body {
 
-        ul {
+            background-color: #04AA6D;
+        }
+
+
+        #Menu {
 
             list-style-type: none;
             padding: 0%;
             margin: 0%;
             overflow:hidden;
             background-color: #333;
-             }
+            position: sticky;
+            width: 100%;
+            border: 1px solid #e7e7e7;
+            top: 0%;
+
+
+        }
 
         li {
             float:left
@@ -40,7 +51,14 @@
             background-color: #04AA6D;
         }
 
-        li {
+        .Avatar {
+
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+
+        }
+        .Menuzinho > li {
 
             border-right: 1px solid #bbb;
         }
@@ -49,58 +67,86 @@
 
             border-right:none;
         }
-        
-        ul {
-            position: sticky;
-            width: 100%;
-            border: 1px solid #e7e7e7;
-            top: 0%;
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
         }
- 
+
+        h1 {
+
+            text-align: center;
+        }
+
         .flex-container {
 
-            display: flex;
-            background-color: #333;
+            display:flex;
             flex-wrap: wrap;
-            justify-content: center;
+            flex-direction:row;
+            border: 1px solid #111;
+            margin: 20px;
+            padding: 50px;
+            width: auto;
+            font-size: xx-large;
+            line-height: 75px;
+            align-items:center;
+            justify-content: space-around;
         }
 
-        .flex-container > div {
-
-            background-color: white;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
+        .flex-container2 {
+            display: flex;
+            align-items: end;
+            justify-content:end;
+            border-left: 1px solid #111;
+            padding: 1cm;
         }
+
+
         </style>
 
 </head>
 <body>
 
 
-    <ul>
+    <ul id="Menu">
 
-        <li><a class="Active" href="http://127.0.0.1:5500/index.html">Home</a></li>
-        <li><a href="http://127.0.0.1:5500/index.html">News</a></li>
-        <li><a href="http://127.0.0.1:5500/index.html">Contact</a></li>
-        <li style="float: right;"><a href="http://127.0.0.1:5500/index.html">About</a></li>
-    </ul>
+        <div class="Menuzinho">
 
-    <div class="flex-container">
+        <li><a class="Active" href="index.html" title="Home">Home</a></li>
+        <li><a href="galeria.html" title="Galeria">Galeria</a></li>
+        <li><a href="album.html" title="Album">Album</a></li>
+        <li style="float: right;"><a href="lista.html" title="Lista">Lista</a></li>
+        </a></li>
 
-    
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div style="flex-grow: 1;">6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>10</div>
-        <div>11</div>
-        <div>12</div>
-    </div>
+        </div>
+
+    </ul> <br>
+    <a href="index.html">
+        <img src="147144.png" alt="Imagem de Avatar" class="Avatar" title="Avatar">
+    </a>
+
+
+    <h1>Bem vindo ao meu site!</h1><br>
+
+            <div class="flex-container">
+                <p style="color: red;">Projetos</p>
+                <p style="color: yellow;">Passatempos</p>
+                <p style="color: blue;">Contatos</p>
+                <p style="color:purple;">E um pouco mais!</p>
+
+                <div class="flex-container2">
+                    <ul>
+                        <li style="color: red;">Projeto 1</li><br>
+                        <li style="color: yellow;">Passatempo 1</li><br>
+                        <li style="color: blue;">Contato 1</li><br>
+                        <li style="color: purple">Ferramenta 1</li><br>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
 </body>
 </html>
