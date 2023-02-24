@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA</title>
+</head>
+<style>
+    body {
+
+        background-color: #04AA6D;
+    }
+    
+    #Menu {
+
+        list-style-type: none;
+        padding: 0%;
+        margin: 0%;
+        overflow: hidden;
+        background-color: #333;
+        position: sticky;
+        width: 100%;
+        border: 1px solid #e7e7e7;
+        top: 0%;
+
+    }
+
+    li {
+        float: left
+    }
+
+    li a {
+
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.Active) {
+
+        background-color: #111;
+    }
+
+    .Active {
+
+        background-color: #04AA6D;
+    }
+
+    .Menuzinho>li {
+
+        border-right: 1px solid #bbb;
+    }
+
+    li:last-child {
+
+        border-right: none;
+    }
+
+    .Lista-enunciado {
+
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .Lista-conteúdo {
+
+        display: flex;
+        flex-direction: column;
+        font-size: xx-large;
+        border-bottom: 3px solid #111;
+        line-height: 50px;
+    }
+</style>
+
+<body>
+    <ul id="Menu">
+
+        <div class="Menuzinho">
+
+            <li><a title="Home" href="index.html">Home</a></li>
+            <li><a title="Galeria" href="galeria.html">Galeria</a></li>
+            <li><a title="Album" href="album.html">Album</a></li>
+            <li title="Lista" class="Active" style="float: right;"><a href="lista.html">Lista</a></li>
+    </ul>
+
+    <h1 class="Lista-enunciado">Lista das melhores TAGS</h1>
+
+    <ul class="Lista-conteúdo">
+        <li>Div.</li>
+        <li>A.</li>
+        <li>Img.</li>
+        <li>Li.</li>
+        <li>H1.</li><br>
+    </ul>
+
+    <h1 class="Lista-enunciado">Lista dos comandos GIT</h1>
+
+    <ul class="Lista-conteúdo">
+        <li>Git init.</li>
+        <li>Git add.</li>
+        <li>Git commit.</li>
+        <li>Git push.</li>
+        <li>Git pull.</li>
+        <li>Git fetch.</li>
+        <li>Git clone.</li>
+    </ul>
+</body>
+
+</html>
